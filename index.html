@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Estados e Municípios do Brasil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+  <div id="container">
+    <p>O Brasil tem <strong class="qtdEstadosBrasil"></strong> estados e <strong class="qtdMunicipiosBrasil"></strong> municípios</p>
+    <small><p>Atualizado em 26/07/2018</p></small>
+
+    <form id="form" method="" action="">
+      <img class="bandeira-estado" src="" alt="" title="">
+
+      <select id="estados"></select>
+      <div class="infos-estado">
+        <p><span class="nomeEstado"></span> tem <span class="qtdMunicipios"></span> municípios</p>
+      </div>
+
+      <select id="municipios"></select>
+      <p class="carregando">carregando...</p>
+      <div class="infos-municipio">
+        <p><span class="nomeMunicipio"></span></p>
+        <p>Código IBGE: <span class="codigoIbge"></span></p>
+        <p>Latitude: <span class="latitude"></span></p>
+        <p>Longitude: <span class="longitude"></span></p>
+        <a id="link-mapa" href="" target="_blank" title="Ver no mapa">Ver no mapa</a>
+      </div>
+    </form>
+
+  </div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>
